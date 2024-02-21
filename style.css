@@ -42,7 +42,7 @@ body, html{
 #content{
   grid-column: 2/6;
   grid-row:3/8;
-  background-color: red;
+  background-color: rgb(255, 255, 221);
 }
 
 #links{
@@ -100,7 +100,7 @@ body{
 
 #header-1{
   display:grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1.3fr;
   
 }
 
@@ -117,7 +117,7 @@ body{
 
 #header-1-a{
   justify-content: flex-start;
-  margin-left:30px;
+  padding-left:30px;
 }
 
 
@@ -133,10 +133,74 @@ body{
 
 #header-2{
   display:grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1.3fr;
   
 }
 
 #header-2-a, #header-2-b{
+  border:1px solid black;
+}
+
+#header-2-b{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  align-items: center;
+}
+
+button{
+  font-size:23px;
+  background-color: rgb(91, 91, 255);
+  padding:10px;
+  border:5px;
+  color:white;
+  border:none;
+  border-radius:10px;
+  font-weight:bold;
+  width:120px;
+}
+
+button:hover{
+  background-color: antiquewhite;
+  color:black;
+  border:2px solid black;
+}
+
+
+#header-2-a{
+  display:flex;
+  text-align:start;
+  align-items: center;
+  justify-content: flex-start;
+  gap:20px;
+  padding-left:30px;
+}
+#larger-profile-picture{
+  height:65px;
+}
+
+#text{
+  display:flex;
+  flex-direction: column;
+}
+
+#hi-there{
+  text-align: left;
+  justify-content: flex-start;
+  align-items:start;
+  font-size:17px;
+}
+
+#morgan-oakley{
+  font-size:27px;
+}
+
+#content{
+  display:grid;
+  grid-template-columns: 5fr 1.8fr;
+  
+}
+
+#content>div{
   border:1px solid black;
 }
